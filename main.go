@@ -1,6 +1,6 @@
 package main
 
-import "github.com/ndgndg91/leetcode/rso1a"
+import "github.com/ndgndg91/leetcode/flnoui"
 
 func main() {
 	//twosum.TestCase1()
@@ -10,5 +10,6 @@ func main() {
 	//lswrc.TestCase2()
 	//lswrc.TestCase3()
 	//lswrc.TestCase4()
-	rso1a.TestCase1()
+	//rso1a.TestCase1()
+	flnoui.TestCase1()
 }

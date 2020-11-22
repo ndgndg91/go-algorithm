@@ -12,3 +12,5 @@ https://leetcode.com/problems/add-two-numbers
 https://leetcode.com/problems/longest-substring-without-repeating-characters
 
 https://leetcode.com/problems/running-sum-of-1d-array
+
+https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/
