@@ -2,6 +2,8 @@ package rso1a
 
 import "fmt"
 
+//https://leetcode.com/problems/running-sum-of-1d-array
+
 func TestCase1() {
 	arr := []int{1, 2, 3, 4}
 	sums := runningSum(arr)

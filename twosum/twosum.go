@@ -2,8 +2,10 @@ package twosum
 
 import "fmt"
 
-func TestCase1()  {
-	nums := []int{2,7,11,15}
+//https://leetcode.com/problems/two-sum
+
+func TestCase1() {
+	nums := []int{2, 7, 11, 15}
 	answer1 := twoSumBruteForce(nums, 9)
 	fmt.Println(answer1)
 	answer2 := twoSumHashTable(nums, 9)
@@ -15,10 +17,10 @@ func TestCase1()  {
 
 }
 
-func twoSumBruteForce(nums []int, target int ) []int {
+func twoSumBruteForce(nums []int, target int) []int {
 	for i := 0; i < len(nums); i++ {
-		for j := i+1; j < len(nums); j++ {
-			if nums[j] == target - nums[i] {
+		for j := i + 1; j < len(nums); j++ {
+			if nums[j] == target-nums[i] {
 				answer := make([]int, 2)
 				answer[0] = i
 				answer[1] = j
@@ -30,9 +32,9 @@ func twoSumBruteForce(nums []int, target int ) []int {
 	return make([]int, 2)
 }
 
-func twoSumHashTable(nums []int, target int) []int  {
+func twoSumHashTable(nums []int, target int) []int {
 	numbers := make(map[int]int)
-	for i, v := range nums{
+	for i, v := range nums {
 		numbers[v] = i
 	}
 
@@ -52,7 +54,7 @@ func twoSumHashTable(nums []int, target int) []int  {
 
 func twoSumHashTableOnceLinear(nums []int, target int) []int {
 	numbers := make(map[int]int)
-	for i,v := range nums {
+	for i, v := range nums {
 		complement := target - v
 		value, exists := numbers[complement]
 		if exists {
