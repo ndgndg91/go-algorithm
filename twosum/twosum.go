@@ -1,6 +1,8 @@
-package twosum
+package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //https://leetcode.com/problems/two-sum
 
